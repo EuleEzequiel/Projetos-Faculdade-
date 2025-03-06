@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE RESPONSIVO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="logo">Front End</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Página Inicial</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Sobre Nós</h1>
+            <p><strong>Bem-vindo à <em>Front End</em></strong>, sua parceira confiável em soluções de desenvolvimento de sistemas...</p>
+            <p>Somos uma equipe <em>apaixonada por tecnologia</em>, composta por especialistas...</p>
+            <p>Seja para desenvolvimento de <strong>aplicativos móveis</strong>, <strong>sistemas web</strong>...</p>
+
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos soluções tecnológicas inovadoras para atender às necessidades do seu negócio.</p>
+            <ul>
+                <li><strong>Desenvolvimento de sistemas</strong> para várias linguagens do mercado.</li>
+                <li><strong>Banco de Dados:</strong> SQL Server e Oracle.</li>
+                <li><strong>Frameworks</strong> para soluções rápidas e eficientes.</li>
+            </ul>
+            <p>Estamos sempre em busca de novas tecnologias...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Front End. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Exibe mensagem ao passar o mouse nos links do menu
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('mouseover', function() {
+                this.title = "Clique para acessar " + this.textContent;
+            });
+        });
+    </script>
+
+</body>
+</html>
