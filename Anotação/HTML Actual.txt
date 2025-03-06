@@ -1,0 +1,114 @@
+/* Reset e estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #000000fd; /* Preto */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+/* Efeito de zoom para a direita no h1 e h2 */
+h1, h2 {
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+h1:hover, h2:hover {
+    transform: scale(1.1) translateX(10%);
+}
+
+/* Mudança de cor ao passar o mouse sobre parágrafos */
+p {
+    transition: color 0.3s ease-in-out;
+}
+
+p:hover {
+    color: #5f6020; /* Marrom escuro */
+}
+
+/* Estilização do menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 2%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    color: #5f6020;
+}
+
+/* Seção principal */
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Ajustes para listas */
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Estilos para telas maiores que 768px (Tablets e Desktops) */
+@media (min-width: 768px) {
+    nav ul {
+        text-align: right;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    main {
+        max-width: 70%;
+    }
+}
+
+/* Estilos para telas maiores que 1024px (Desktops grandes) */
+@media (min-width: 1024px) {
+    main {
+        max-width: 60%;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
